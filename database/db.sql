@@ -4,13 +4,14 @@
 
 
 #------------------------------------------------------------
-# Table: Utilisateur
+# Table: MEMBRE
 #------------------------------------------------------------
 
-CREATE TABLE Utilisateur(
+CREATE TABLE MEMBRE(
         IDU           int (11) Auto_increment  NOT NULL ,
         Nom           Varchar (25) ,
         Prenom        Varchar (25) ,
+        login         Varchar (42) ,
         Adresse_Email Varchar (100) NOT NULL ,
         MDP           Varchar (30) NOT NULL ,
         Age           Int NOT NULL ,
@@ -123,38 +124,14 @@ CREATE TABLE ORGANISATEUR(
 
 
 #------------------------------------------------------------
-# Table: MEMBRE
-#------------------------------------------------------------
-
-CREATE TABLE MEMBRE(
-        idV   int (11) Auto_increment  NOT NULL ,
-        Login Varchar (25) NOT NULL ,
-        MDP   Varchar (30) NOT NULL ,
-        IDU   Int NOT NULL ,
-        PRIMARY KEY (idV )
-)ENGINE=InnoDB;
-
-
-#------------------------------------------------------------
-# Table: Creer
-#------------------------------------------------------------
-
-CREATE TABLE Creer(
-        IDEvent Int NOT NULL ,
-        idOrg   Int NOT NULL ,
-        PRIMARY KEY (IDEvent ,idOrg )
-)ENGINE=InnoDB;
-
-
-#------------------------------------------------------------
 # Table: Participe
 #------------------------------------------------------------
 
 CREATE TABLE Participe(
         estSAM         Bool NOT NULL ,
         IDGroupeSoiree Int NOT NULL ,
-        idV            Int NOT NULL ,
-        PRIMARY KEY (IDGroupeSoiree ,idV )
+        IDU            Int NOT NULL ,
+        PRIMARY KEY (IDGroupeSoiree ,IDU )
 )ENGINE=InnoDB;
 
 
@@ -208,38 +185,35 @@ CREATE TABLE Poser_Question(
 #------------------------------------------------------------
 
 CREATE TABLE renseigner(
-        idV       Int NOT NULL ,
         IDQualite Int NOT NULL ,
-        PRIMARY KEY (idV ,IDQualite )
+        IDU       Int NOT NULL ,
+        PRIMARY KEY (IDQualite ,IDU )
 )ENGINE=InnoDB;
 
 
 #------------------------------------------------------------
-# Table: Sera_present
+# Table: Est_present
 #------------------------------------------------------------
 
-CREATE TABLE Sera_present(
-        idV     Int NOT NULL ,
+CREATE TABLE Est_present(
         IDEvent Int NOT NULL ,
-        PRIMARY KEY (idV ,IDEvent )
+        IDU     Int NOT NULL ,
+        PRIMARY KEY (IDEvent ,IDU )
 )ENGINE=InnoDB;
 
 ALTER TABLE EVENEMENT ADD CONSTRAINT FK_EVENEMENT_IDLocalisation FOREIGN KEY (IDLocalisation) REFERENCES LOCALISATION(IDLocalisation);
-ALTER TABLE ORGANISATEUR ADD CONSTRAINT FK_ORGANISATEUR_IDU FOREIGN KEY (IDU) REFERENCES Utilisateur(IDU);
-ALTER TABLE MEMBRE ADD CONSTRAINT FK_MEMBRE_IDU FOREIGN KEY (IDU) REFERENCES Utilisateur(IDU);
-ALTER TABLE Creer ADD CONSTRAINT FK_Creer_IDEvent FOREIGN KEY (IDEvent) REFERENCES EVENEMENT(IDEvent);
-ALTER TABLE Creer ADD CONSTRAINT FK_Creer_idOrg FOREIGN KEY (idOrg) REFERENCES ORGANISATEUR(idOrg);
+ALTER TABLE ORGANISATEUR ADD CONSTRAINT FK_ORGANISATEUR_IDU FOREIGN KEY (IDU) REFERENCES MEMBRE(IDU);
 ALTER TABLE Participe ADD CONSTRAINT FK_Participe_IDGroupeSoiree FOREIGN KEY (IDGroupeSoiree) REFERENCES GROUPESOIREE(IDGroupeSoiree);
-ALTER TABLE Participe ADD CONSTRAINT FK_Participe_idV FOREIGN KEY (idV) REFERENCES MEMBRE(idV);
+ALTER TABLE Participe ADD CONSTRAINT FK_Participe_IDU FOREIGN KEY (IDU) REFERENCES MEMBRE(IDU);
 ALTER TABLE Propose ADD CONSTRAINT FK_Propose_IDForma FOREIGN KEY (IDForma) REFERENCES FORMATIONS(IDForma);
 ALTER TABLE Propose ADD CONSTRAINT FK_Propose_idOrg FOREIGN KEY (idOrg) REFERENCES ORGANISATEUR(idOrg);
 ALTER TABLE PossedeImages ADD CONSTRAINT FK_PossedeImages_IDForma FOREIGN KEY (IDForma) REFERENCES FORMATIONS(IDForma);
 ALTER TABLE PossedeImages ADD CONSTRAINT FK_PossedeImages_IDImage FOREIGN KEY (IDImage) REFERENCES IMAGES(IDImage);
 ALTER TABLE PossedeVideos ADD CONSTRAINT FK_PossedeVideos_IDForma FOREIGN KEY (IDForma) REFERENCES FORMATIONS(IDForma);
 ALTER TABLE PossedeVideos ADD CONSTRAINT FK_PossedeVideos_IDVideo FOREIGN KEY (IDVideo) REFERENCES VIDEOS(IDVideo);
-ALTER TABLE Poser_Question ADD CONSTRAINT FK_Poser_Question_IDU FOREIGN KEY (IDU) REFERENCES Utilisateur(IDU);
+ALTER TABLE Poser_Question ADD CONSTRAINT FK_Poser_Question_IDU FOREIGN KEY (IDU) REFERENCES MEMBRE(IDU);
 ALTER TABLE Poser_Question ADD CONSTRAINT FK_Poser_Question_IDForma FOREIGN KEY (IDForma) REFERENCES FORMATIONS(IDForma);
-ALTER TABLE renseigner ADD CONSTRAINT FK_renseigner_idV FOREIGN KEY (idV) REFERENCES MEMBRE(idV);
 ALTER TABLE renseigner ADD CONSTRAINT FK_renseigner_IDQualite FOREIGN KEY (IDQualite) REFERENCES QUALITE_ROUTE(IDQualite);
-ALTER TABLE Sera_present ADD CONSTRAINT FK_Sera_present_idV FOREIGN KEY (idV) REFERENCES MEMBRE(idV);
-ALTER TABLE Sera_present ADD CONSTRAINT FK_Sera_present_IDEvent FOREIGN KEY (IDEvent) REFERENCES EVENEMENT(IDEvent);
+ALTER TABLE renseigner ADD CONSTRAINT FK_renseigner_IDU FOREIGN KEY (IDU) REFERENCES MEMBRE(IDU);
+ALTER TABLE Est_present ADD CONSTRAINT FK_Est_present_IDEvent FOREIGN KEY (IDEvent) REFERENCES EVENEMENT(IDEvent);
+ALTER TABLE Est_present ADD CONSTRAINT FK_Est_present_IDU FOREIGN KEY (IDU) REFERENCES MEMBRE(IDU);
