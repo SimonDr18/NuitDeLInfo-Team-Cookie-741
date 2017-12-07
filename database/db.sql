@@ -2,22 +2,39 @@
 #        Script MySQL.
 #------------------------------------------------------------
 
+DROP TABLE Participe;
+DROP TABLE Propose;
+DROP TABLE PossedeImages;
+DROP TABLE PossedeVideos;
+DROP TABLE Poser_Question;
+DROP TABLE Est_present;
+DROP TABLE Renseigner;
+DROP TABLE GROUPESOIREE;
+DROP TABLE EVENEMENT;
+DROP TABLE FORMATIONS;
+DROP TABLE LOCALISATION;
+DROP TABLE QUALITE_ROUTE;
+DROP TABLE IMAGES;
+DROP TABLE VIDEOS;
+DROP TABLE ORGANISATEUR;
+DROP TABLE MEMBRE;
+
 
 #------------------------------------------------------------
 # Table: MEMBRE
 #------------------------------------------------------------
 
 CREATE TABLE MEMBRE(
-        IDU           int (11) Auto_increment  NOT NULL ,
-        Nom           Varchar (25) ,
-        Prenom        Varchar (25) ,
+        idU           int (11) Auto_increment  NOT NULL ,
+        nom           Varchar (25) ,
+        prenom        Varchar (25) ,
         login         Varchar (42) ,
-        Adresse_Email Varchar (100) NOT NULL ,
-        MDP           Varchar (30) NOT NULL ,
-        Age           Int NOT NULL ,
-        Ville         Varchar (25) ,
-        PRIMARY KEY (IDU )
-)ENGINE=InnoDB;
+        adresse_Email Varchar (100) NOT NULL ,
+        mdp           Varchar (30) NOT NULL ,
+        age           Int NOT NULL ,
+        ville         Varchar (25) ,
+        PRIMARY KEY (idU)
+);
 
 
 #------------------------------------------------------------
@@ -25,12 +42,12 @@ CREATE TABLE MEMBRE(
 #------------------------------------------------------------
 
 CREATE TABLE GROUPESOIREE(
-        IDGroupeSoiree int (11) Auto_increment  NOT NULL ,
-        Adresse        Varchar (100) ,
-        DateDeb        Datetime NOT NULL ,
-        DateFin        Datetime ,
-        PRIMARY KEY (IDGroupeSoiree )
-)ENGINE=InnoDB;
+        idGroupeSoiree int (11) Auto_increment  NOT NULL ,
+        adresse        Varchar (100) ,
+        dateDeb        Datetime NOT NULL ,
+        dateFin        Datetime ,
+        PRIMARY KEY (idGroupeSoiree)
+);
 
 
 #------------------------------------------------------------
@@ -38,13 +55,13 @@ CREATE TABLE GROUPESOIREE(
 #------------------------------------------------------------
 
 CREATE TABLE EVENEMENT(
-        IDEvent        int (11) Auto_increment  NOT NULL ,
-        TitreEvent     Varchar (25) ,
-        Type           Varchar (25) NOT NULL ,
-        NbBlesse       Int ,
-        IDLocalisation Int NOT NULL ,
-        PRIMARY KEY (IDEvent )
-)ENGINE=InnoDB;
+        idEvent        int (11) Auto_increment  NOT NULL ,
+        titreEvent     Varchar (25) ,
+        type           Varchar (25) NOT NULL ,
+        nbBlesse       Int ,
+        idLocalisation Int NOT NULL ,
+        PRIMARY KEY (idEvent)
+);
 
 
 #------------------------------------------------------------
@@ -52,12 +69,12 @@ CREATE TABLE EVENEMENT(
 #------------------------------------------------------------
 
 CREATE TABLE FORMATIONS(
-        IDForma    int (11) Auto_increment  NOT NULL ,
-        TitreForma Varchar (25) NOT NULL ,
-        TypeFoma   Varchar (25) NOT NULL ,
-        Contenu    Varchar (500) NOT NULL ,
-        PRIMARY KEY (IDForma )
-)ENGINE=InnoDB;
+        idForma    int (11) Auto_increment  NOT NULL ,
+        titreForma Varchar (25) NOT NULL ,
+        typeFoma   Varchar (25) NOT NULL ,
+        contenu    Varchar (500) NOT NULL ,
+        PRIMARY KEY (idForma)
+);
 
 
 #------------------------------------------------------------
@@ -65,11 +82,11 @@ CREATE TABLE FORMATIONS(
 #------------------------------------------------------------
 
 CREATE TABLE LOCALISATION(
-        IDLocalisation int (11) Auto_increment  NOT NULL ,
-        Latitude       Float NOT NULL ,
-        Longitude      Float NOT NULL ,
-        PRIMARY KEY (IDLocalisation )
-)ENGINE=InnoDB;
+        idLocalisation int (11) Auto_increment  NOT NULL ,
+        latitude       Float NOT NULL ,
+        longitude      Float NOT NULL ,
+        PRIMARY KEY (idLocalisation )
+);
 
 
 #------------------------------------------------------------
@@ -77,13 +94,13 @@ CREATE TABLE LOCALISATION(
 #------------------------------------------------------------
 
 CREATE TABLE QUALITE_ROUTE(
-        IDQualite   int (11) Auto_increment  NOT NULL ,
+        idQualite   int (11) Auto_increment  NOT NULL ,
         Etat_Route  Varchar (25) NOT NULL ,
         Departement Int NOT NULL ,
         NomRoute    Varchar (25) NOT NULL ,
-        KIlometre   Float NOT NULL ,
-        PRIMARY KEY (IDQualite )
-)ENGINE=InnoDB;
+        kilometre   Float NOT NULL ,
+        PRIMARY KEY (idQualite)
+);
 
 
 #------------------------------------------------------------
@@ -91,12 +108,12 @@ CREATE TABLE QUALITE_ROUTE(
 #------------------------------------------------------------
 
 CREATE TABLE IMAGES(
-        IDImage     int (11) Auto_increment  NOT NULL ,
-        NomImage    Varchar (25) NOT NULL ,
-        TailleImage Int NOT NULL ,
-        Resolution  Varchar (25) NOT NULL ,
-        PRIMARY KEY (IDImage )
-)ENGINE=InnoDB;
+        idImage     int (11) Auto_increment  NOT NULL ,
+        nomImage    Varchar (25) NOT NULL ,
+        tailleImage Int NOT NULL ,
+        resolution  Varchar (25) NOT NULL ,
+        PRIMARY KEY (idImage)
+);
 
 
 #------------------------------------------------------------
@@ -104,12 +121,12 @@ CREATE TABLE IMAGES(
 #------------------------------------------------------------
 
 CREATE TABLE VIDEOS(
-        IDVideo     int (11) Auto_increment  NOT NULL ,
-        NomVideo    Varchar (25) NOT NULL ,
-        TailleVideo Int NOT NULL ,
-        Duree       Time NOT NULL ,
-        PRIMARY KEY (IDVideo )
-)ENGINE=InnoDB;
+        idVideo     int (11) Auto_increment  NOT NULL ,
+        nomVideo    Varchar (25) NOT NULL ,
+        tailleVideo Int NOT NULL ,
+        duree       Time NOT NULL ,
+        PRIMARY KEY (idVideo )
+);
 
 
 #------------------------------------------------------------
@@ -118,9 +135,9 @@ CREATE TABLE VIDEOS(
 
 CREATE TABLE ORGANISATEUR(
         idOrg int (11) Auto_increment  NOT NULL ,
-        IDU   Int NOT NULL ,
+        idU   Int NOT NULL ,
         PRIMARY KEY (idOrg )
-)ENGINE=InnoDB;
+);
 
 
 #------------------------------------------------------------
@@ -129,10 +146,10 @@ CREATE TABLE ORGANISATEUR(
 
 CREATE TABLE Participe(
         estSAM         Bool NOT NULL ,
-        IDGroupeSoiree Int NOT NULL ,
-        IDU            Int NOT NULL ,
-        PRIMARY KEY (IDGroupeSoiree ,IDU )
-)ENGINE=InnoDB;
+        idGroupeSoiree Int NOT NULL ,
+        idU            Int NOT NULL ,
+        PRIMARY KEY (idGroupeSoiree ,idU)
+);
 
 
 #------------------------------------------------------------
@@ -140,10 +157,10 @@ CREATE TABLE Participe(
 #------------------------------------------------------------
 
 CREATE TABLE Propose(
-        IDForma Int NOT NULL ,
+        idForma Int NOT NULL ,
         idOrg   Int NOT NULL ,
-        PRIMARY KEY (IDForma ,idOrg )
-)ENGINE=InnoDB;
+        PRIMARY KEY (idForma ,idOrg )
+);
 
 
 #------------------------------------------------------------
@@ -151,10 +168,10 @@ CREATE TABLE Propose(
 #------------------------------------------------------------
 
 CREATE TABLE PossedeImages(
-        IDForma Int NOT NULL ,
-        IDImage Int NOT NULL ,
-        PRIMARY KEY (IDForma ,IDImage )
-)ENGINE=InnoDB;
+        idForma Int NOT NULL ,
+        idImage Int NOT NULL ,
+        PRIMARY KEY (idForma ,idImage )
+);
 
 
 #------------------------------------------------------------
@@ -162,10 +179,10 @@ CREATE TABLE PossedeImages(
 #------------------------------------------------------------
 
 CREATE TABLE PossedeVideos(
-        IDForma Int NOT NULL ,
-        IDVideo Int NOT NULL ,
-        PRIMARY KEY (IDForma ,IDVideo )
-)ENGINE=InnoDB;
+        idForma Int NOT NULL ,
+        idVideo Int NOT NULL ,
+        PRIMARY KEY (idForma ,idVideo )
+);
 
 
 #------------------------------------------------------------
@@ -174,21 +191,21 @@ CREATE TABLE PossedeVideos(
 
 CREATE TABLE Poser_Question(
         Question Varchar (250) NOT NULL ,
-        IDU      Int NOT NULL ,
-        IDForma  Int NOT NULL ,
-        PRIMARY KEY (IDU ,IDForma )
-)ENGINE=InnoDB;
+        idU      Int NOT NULL ,
+        idForma  Int NOT NULL ,
+        PRIMARY KEY (idU ,idForma )
+);
 
 
 #------------------------------------------------------------
-# Table: renseigner
+# Table: Renseigner
 #------------------------------------------------------------
 
-CREATE TABLE renseigner(
-        IDQualite Int NOT NULL ,
-        IDU       Int NOT NULL ,
-        PRIMARY KEY (IDQualite ,IDU )
-)ENGINE=InnoDB;
+CREATE TABLE Renseigner(
+        idQualite Int NOT NULL ,
+        idU       Int NOT NULL ,
+        PRIMARY KEY (idQualite ,idU )
+);
 
 
 #------------------------------------------------------------
@@ -196,24 +213,24 @@ CREATE TABLE renseigner(
 #------------------------------------------------------------
 
 CREATE TABLE Est_present(
-        IDEvent Int NOT NULL ,
-        IDU     Int NOT NULL ,
-        PRIMARY KEY (IDEvent ,IDU )
-)ENGINE=InnoDB;
+        idEvent Int NOT NULL ,
+        idU     Int NOT NULL ,
+        PRIMARY KEY (idEvent ,idU )
+);
 
-ALTER TABLE EVENEMENT ADD CONSTRAINT FK_EVENEMENT_IDLocalisation FOREIGN KEY (IDLocalisation) REFERENCES LOCALISATION(IDLocalisation);
-ALTER TABLE ORGANISATEUR ADD CONSTRAINT FK_ORGANISATEUR_IDU FOREIGN KEY (IDU) REFERENCES MEMBRE(IDU);
-ALTER TABLE Participe ADD CONSTRAINT FK_Participe_IDGroupeSoiree FOREIGN KEY (IDGroupeSoiree) REFERENCES GROUPESOIREE(IDGroupeSoiree);
-ALTER TABLE Participe ADD CONSTRAINT FK_Participe_IDU FOREIGN KEY (IDU) REFERENCES MEMBRE(IDU);
-ALTER TABLE Propose ADD CONSTRAINT FK_Propose_IDForma FOREIGN KEY (IDForma) REFERENCES FORMATIONS(IDForma);
+ALTER TABLE EVENEMENT ADD CONSTRAINT FK_EVENEMENT_IDLocalisation FOREIGN KEY (idLocalisation) REFERENCES LOCALISATION(idLocalisation);
+ALTER TABLE ORGANISATEUR ADD CONSTRAINT FK_ORGANISATEUR_idU FOREIGN KEY (idU) REFERENCES MEMBRE(idU);
+ALTER TABLE Participe ADD CONSTRAINT FK_Participe_IDGroupeSoiree FOREIGN KEY (idGroupeSoiree) REFERENCES GROUPESOIREE(idGroupeSoiree);
+ALTER TABLE Participe ADD CONSTRAINT FK_Participe_idU FOREIGN KEY (idU) REFERENCES MEMBRE(idU);
+ALTER TABLE Propose ADD CONSTRAINT FK_Propose_IDForma FOREIGN KEY (idForma) REFERENCES FORMATIONS(idForma);
 ALTER TABLE Propose ADD CONSTRAINT FK_Propose_idOrg FOREIGN KEY (idOrg) REFERENCES ORGANISATEUR(idOrg);
-ALTER TABLE PossedeImages ADD CONSTRAINT FK_PossedeImages_IDForma FOREIGN KEY (IDForma) REFERENCES FORMATIONS(IDForma);
-ALTER TABLE PossedeImages ADD CONSTRAINT FK_PossedeImages_IDImage FOREIGN KEY (IDImage) REFERENCES IMAGES(IDImage);
-ALTER TABLE PossedeVideos ADD CONSTRAINT FK_PossedeVideos_IDForma FOREIGN KEY (IDForma) REFERENCES FORMATIONS(IDForma);
-ALTER TABLE PossedeVideos ADD CONSTRAINT FK_PossedeVideos_IDVideo FOREIGN KEY (IDVideo) REFERENCES VIDEOS(IDVideo);
-ALTER TABLE Poser_Question ADD CONSTRAINT FK_Poser_Question_IDU FOREIGN KEY (IDU) REFERENCES MEMBRE(IDU);
-ALTER TABLE Poser_Question ADD CONSTRAINT FK_Poser_Question_IDForma FOREIGN KEY (IDForma) REFERENCES FORMATIONS(IDForma);
-ALTER TABLE renseigner ADD CONSTRAINT FK_renseigner_IDQualite FOREIGN KEY (IDQualite) REFERENCES QUALITE_ROUTE(IDQualite);
-ALTER TABLE renseigner ADD CONSTRAINT FK_renseigner_IDU FOREIGN KEY (IDU) REFERENCES MEMBRE(IDU);
-ALTER TABLE Est_present ADD CONSTRAINT FK_Est_present_IDEvent FOREIGN KEY (IDEvent) REFERENCES EVENEMENT(IDEvent);
-ALTER TABLE Est_present ADD CONSTRAINT FK_Est_present_IDU FOREIGN KEY (IDU) REFERENCES MEMBRE(IDU);
+ALTER TABLE PossedeImages ADD CONSTRAINT FK_PossedeImages_IDForma FOREIGN KEY (idForma) REFERENCES FORMATIONS(idForma);
+ALTER TABLE PossedeImages ADD CONSTRAINT FK_PossedeImages_IDImage FOREIGN KEY (idImage) REFERENCES IMAGES(idImage);
+ALTER TABLE PossedeVideos ADD CONSTRAINT FK_PossedeVideos_IDForma FOREIGN KEY (idForma) REFERENCES FORMATIONS(idForma);
+ALTER TABLE PossedeVideos ADD CONSTRAINT FK_PossedeVideos_IDVideo FOREIGN KEY (idVideo) REFERENCES VIDEOS(idVideo);
+ALTER TABLE Poser_Question ADD CONSTRAINT FK_Poser_Question_idU FOREIGN KEY (idU) REFERENCES MEMBRE(idU);
+ALTER TABLE Poser_Question ADD CONSTRAINT FK_Poser_Question_IDForma FOREIGN KEY (idForma) REFERENCES FORMATIONS(idForma);
+ALTER TABLE Renseigner ADD CONSTRAINT FK_renseigner_IDQualite FOREIGN KEY (idQualite) REFERENCES QUALITE_ROUTE(idQualite);
+ALTER TABLE Renseigner ADD CONSTRAINT FK_renseigner_idU FOREIGN KEY (idU) REFERENCES MEMBRE(idU);
+ALTER TABLE Est_present ADD CONSTRAINT FK_Est_present_IDEvent FOREIGN KEY (idEvent) REFERENCES EVENEMENT(idEvent);
+ALTER TABLE Est_present ADD CONSTRAINT FK_Est_present_idU FOREIGN KEY (idU) REFERENCES MEMBRE(idU);
