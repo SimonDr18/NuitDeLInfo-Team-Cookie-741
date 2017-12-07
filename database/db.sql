@@ -1,29 +1,3 @@
-#------------------------------------------------------------
-#        Script MySQL.
-#------------------------------------------------------------
-
-DROP TABLE Participe;
-DROP TABLE Propose;
-DROP TABLE PossedeImages;
-DROP TABLE PossedeVideos;
-DROP TABLE Poser_Question;
-DROP TABLE Est_present;
-DROP TABLE Renseigner;
-DROP TABLE GROUPESOIREE;
-DROP TABLE EVENEMENT;
-DROP TABLE FORMATIONS;
-DROP TABLE LOCALISATION;
-DROP TABLE QUALITE_ROUTE;
-DROP TABLE IMAGES;
-DROP TABLE VIDEOS;
-DROP TABLE ORGANISATEUR;
-DROP TABLE MEMBRE;
-
-
-#------------------------------------------------------------
-# Table: MEMBRE
-#------------------------------------------------------------
-
 CREATE TABLE MEMBRE(
         idU           int (11) Auto_increment  NOT NULL ,
         nom           Varchar (25) ,
@@ -36,11 +10,6 @@ CREATE TABLE MEMBRE(
         PRIMARY KEY (idU)
 );
 
-
-#------------------------------------------------------------
-# Table: GROUPESOIREE
-#------------------------------------------------------------
-
 CREATE TABLE GROUPESOIREE(
         idGroupeSoiree int (11) Auto_increment  NOT NULL ,
         adresse        Varchar (100) ,
@@ -48,11 +17,6 @@ CREATE TABLE GROUPESOIREE(
         dateFin        Datetime ,
         PRIMARY KEY (idGroupeSoiree)
 );
-
-
-#------------------------------------------------------------
-# Table: EVENEMENT
-#------------------------------------------------------------
 
 CREATE TABLE EVENEMENT(
         idEvent        int (11) Auto_increment  NOT NULL ,
@@ -63,11 +27,6 @@ CREATE TABLE EVENEMENT(
         PRIMARY KEY (idEvent)
 );
 
-
-#------------------------------------------------------------
-# Table: FORMATIONS
-#------------------------------------------------------------
-
 CREATE TABLE FORMATIONS(
         idForma    int (11) Auto_increment  NOT NULL ,
         titreForma Varchar (25) NOT NULL ,
@@ -76,22 +35,12 @@ CREATE TABLE FORMATIONS(
         PRIMARY KEY (idForma)
 );
 
-
-#------------------------------------------------------------
-# Table: LOCALISATION
-#------------------------------------------------------------
-
 CREATE TABLE LOCALISATION(
         idLocalisation int (11) Auto_increment  NOT NULL ,
         latitude       Float NOT NULL ,
         longitude      Float NOT NULL ,
         PRIMARY KEY (idLocalisation )
 );
-
-
-#------------------------------------------------------------
-# Table: QUALITE_ROUTE
-#------------------------------------------------------------
 
 CREATE TABLE QUALITE_ROUTE(
         idQualite   int (11) Auto_increment  NOT NULL ,
@@ -102,11 +51,6 @@ CREATE TABLE QUALITE_ROUTE(
         PRIMARY KEY (idQualite)
 );
 
-
-#------------------------------------------------------------
-# Table: IMAGES
-#------------------------------------------------------------
-
 CREATE TABLE IMAGES(
         idImage     int (11) Auto_increment  NOT NULL ,
         nomImage    Varchar (25) NOT NULL ,
@@ -114,11 +58,6 @@ CREATE TABLE IMAGES(
         resolution  Varchar (25) NOT NULL ,
         PRIMARY KEY (idImage)
 );
-
-
-#------------------------------------------------------------
-# Table: VIDEOS
-#------------------------------------------------------------
 
 CREATE TABLE VIDEOS(
         idVideo     int (11) Auto_increment  NOT NULL ,
@@ -128,21 +67,11 @@ CREATE TABLE VIDEOS(
         PRIMARY KEY (idVideo )
 );
 
-
-#------------------------------------------------------------
-# Table: ORGANISATEUR
-#------------------------------------------------------------
-
 CREATE TABLE ORGANISATEUR(
         idOrg int (11) Auto_increment  NOT NULL ,
         idU   Int NOT NULL ,
         PRIMARY KEY (idOrg )
 );
-
-
-#------------------------------------------------------------
-# Table: Participe
-#------------------------------------------------------------
 
 CREATE TABLE Participe(
         estSAM         Bool NOT NULL ,
@@ -151,21 +80,11 @@ CREATE TABLE Participe(
         PRIMARY KEY (idGroupeSoiree ,idU)
 );
 
-
-#------------------------------------------------------------
-# Table: Propose
-#------------------------------------------------------------
-
 CREATE TABLE Propose(
         idForma Int NOT NULL ,
         idOrg   Int NOT NULL ,
         PRIMARY KEY (idForma ,idOrg )
 );
-
-
-#------------------------------------------------------------
-# Table: PossedeImages
-#------------------------------------------------------------
 
 CREATE TABLE PossedeImages(
         idForma Int NOT NULL ,
@@ -173,21 +92,11 @@ CREATE TABLE PossedeImages(
         PRIMARY KEY (idForma ,idImage )
 );
 
-
-#------------------------------------------------------------
-# Table: PossedeVideos
-#------------------------------------------------------------
-
 CREATE TABLE PossedeVideos(
         idForma Int NOT NULL ,
         idVideo Int NOT NULL ,
         PRIMARY KEY (idForma ,idVideo )
-);
-
-
-#------------------------------------------------------------
-# Table: Poser_Question
-#------------------------------------------------------------
+);--------------------------------------------------------
 
 CREATE TABLE Poser_Question(
         Question Varchar (250) NOT NULL ,
@@ -196,21 +105,11 @@ CREATE TABLE Poser_Question(
         PRIMARY KEY (idU ,idForma )
 );
 
-
-#------------------------------------------------------------
-# Table: Renseigner
-#------------------------------------------------------------
-
 CREATE TABLE Renseigner(
         idQualite Int NOT NULL ,
         idU       Int NOT NULL ,
         PRIMARY KEY (idQualite ,idU )
 );
-
-
-#------------------------------------------------------------
-# Table: Est_present
-#------------------------------------------------------------
 
 CREATE TABLE Est_present(
         idEvent Int NOT NULL ,

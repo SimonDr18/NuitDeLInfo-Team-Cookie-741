@@ -10,7 +10,7 @@
 			try{
 				$file_db = new PDO("sqlite:site.sqlite3");
 				$file_db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-				$sql = file_get_contents('db.sql');
+				$sql = file_get_contents('reset.sql');
 				$rep = $file_db->exec($sql);
 				header("Location: ../");
 			} catch(PDOException $e) {
