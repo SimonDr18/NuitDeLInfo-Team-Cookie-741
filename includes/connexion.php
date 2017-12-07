@@ -3,12 +3,12 @@
   <head>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="design.css" />
-    <title>Social.dev [connexion]</title>
+    <title>[titre]]</title>
   </head>
   <?php session_start(); ?>
   <body>
     <header>
-      <h1>Connection</h1>
+      <h1>connexion</h1>
     </header>
     <section>
       <form action="#" method="post">
