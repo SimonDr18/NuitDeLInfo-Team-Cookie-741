@@ -19,21 +19,20 @@
                 <li><a href="event.php">Signaler event</a></li>
 
                 <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Infos <span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="#">Action</a></li>
-                        <li><a href="#">Another action</a></li>
-                        <li><a href="#">Something else here</a></li>
-                        <li role="separator" class="divider"></li>
-                        <li class="dropdown-header">Nav header</li>
-                        <li><a href="#">Separated link</a></li>
-                        <li><a href="#">One more separated link</a></li>
+                        <li><a href="#">Evenement</a></li>
+                        <li><a href="#">Condition route</a></li>
+                        <li><a href="#">Transport</a></li>
                     </ul>
                 </li>
                 <li><a href="formation.php">Formation</a></li>
                 <li class="dropdown">
             </ul>
-            </form>
+            <ul class="nav navbar-nav navbar-right">
+                <li><button type="submit" class="btn btn-primary btn-sm"><a href="connexion.php">Connexion</a></button></li>
+            </ul>
+
         </div><!--/.nav-collapse -->
 
     </div>
