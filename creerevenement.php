@@ -46,6 +46,7 @@ $_SESSION["page"]="creerevenement.php";
           </div>
       </div>
   </div>
+</div>
   <script>
     var myForm = document.getElementById('myForm');
     var titre = document.getElementById('Titre');
