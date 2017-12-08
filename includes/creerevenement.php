@@ -6,14 +6,14 @@
   </head>
 
   <header>
-    <h1>Creer un evenement</h1>
+    <h1>Signaler un evenement</h1>
   </header>
 
   <section>
     <form action="#" method="post">
       Titre evenement : <input type="text" name="event" /><br />
       Type : <input type="text" name="type" /><br />
-      Nombre de blessés : <input type="text" name="nbblesses" /><br />
+      Nombre de blessés : <input type="number" name="nbblesses" /><br />
       <input type="submit" value="Creer"/>
     </form>
 </html>
