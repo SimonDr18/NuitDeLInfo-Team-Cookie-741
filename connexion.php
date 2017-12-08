@@ -4,18 +4,15 @@ $_SESSION["page"]="connexion.php";
 ?>
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8" />
-    <link rel="stylesheet" href="design.css" />
-    <title>Connexion</title>
-    <?php include_once("includes/_head.php"); ?>
-  </head>
-  <body>
+<?php include_once("includes/_head.php"); ?>
+
     <?php require_once("includes/_header.php"); ?>
-    <header>
-      <h1>Connexion</h1>
+    <body >
+    <div id="connexion">
+    <header id="titreCo">
+      <h1 >Connexion</h1>
     </header>
-    <section>
+    <section class="panel-body ajout">
       <?php
         if(isset($_REQUEST["err"]))
           echo "Utilisateur inconnu";
@@ -29,5 +26,6 @@ $_SESSION["page"]="connexion.php";
         <input type="submit" value="inscription"/>
       </form>
     </section>
+    </div>
   </body>
 </html>

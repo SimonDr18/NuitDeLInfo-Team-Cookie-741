@@ -81,3 +81,17 @@ nav a{
 .connect{
     backcolor: yellow;
 }
+#connexion{
+    background-color: white;
+    margin: auto;
+    padding-bottom: 1px;
+    text-align: center;
+    width: 50%;
+}
+#titreCo{
+    background-color: #cacaca;
+}
+#container{
+    margin: auto;
+    text-align: center;
+}

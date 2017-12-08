@@ -12,7 +12,8 @@ $_SESSION["page"]="inscription.php";
   <body>
     <?php require_once("includes/_header.php"); ?>
     <?php require_once("includes/_db.php"); ?>
-    <header>
+    <div id="connexion">
+    <header id="titreCo">
       <h1>Inscription</h1>
     </header>
     <section>
@@ -26,7 +27,7 @@ $_SESSION["page"]="inscription.php";
         Re-Mot de passe : <input type="password" name="pass2" /><br />
         Age : <input type="number" name="age" /><br />
         Ville : <input type="text" name="ville" /><br />
-        <input type="submit" value="INSCRIPTION"/>
+        <input type="submit" value="Inscription "/>
       </form>
 
       <?php
@@ -112,5 +113,6 @@ $_SESSION["page"]="inscription.php";
           }
         ?>
       </section>
+    </div>
   </body>
 </html>
