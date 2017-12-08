@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Voir le sujet"/>
     <meta name="author" content="Team Cookies.741">
-    <link rel="icon" type="Images/png" href="Images/icon.png" />
+    <link rel="icon" type="png" href="sam.jpg" />
     <title>Cookies Prévention</title>
     <!-- Bootstrap core CSS -->
     <link href="static/bootstrap3-dist/css/bootstrap.min.css" rel="stylesheet">

@@ -1,6 +1,12 @@
 body {
-    padding: 40px 15px;
+    background: url("../fond.jpg");
+    background-size: cover;
+    padding: 100px 15px;
     text-align: center;
+}
+
+.elem{
+    background: white;
 }
 
 
