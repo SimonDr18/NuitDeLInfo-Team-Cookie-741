@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="441d5218-2498-45b2-88ad-e6ee433ecc14" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/connexion.php" afterPath="$PROJECT_DIR$/connexion.php" />
-      <change beforePath="$PROJECT_DIR$/includes/BlackSquare.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/includes/arrive.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/includes/enigme1.html" afterPath="$PROJECT_DIR$/includes/enigme1.html" />
-      <change beforePath="$PROJECT_DIR$/inscription.php" afterPath="$PROJECT_DIR$/inscription.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/+soiree.php" />
+      <change beforePath="$PROJECT_DIR$/soiree.php" afterPath="$PROJECT_DIR$/soiree.php" />
       <change beforePath="$PROJECT_DIR$/static/main.css" afterPath="$PROJECT_DIR$/static/main.css" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -52,8 +48,8 @@
       <file leaf-file-name="main.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/static/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="72" column="18" lean-forward="true" selection-start-line="72" selection-start-column="18" selection-end-line="72" selection-end-column="18" />
+            <state relative-caret-position="717">
+              <caret line="119" column="0" lean-forward="true" selection-start-line="119" selection-start-column="0" selection-end-line="119" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -131,8 +127,8 @@
         <option value="$PROJECT_DIR$/creerevenement.php" />
         <option value="$PROJECT_DIR$/includes/enigme1.html" />
         <option value="$PROJECT_DIR$/connexion.php" />
-        <option value="$PROJECT_DIR$/static/main.css" />
         <option value="$PROJECT_DIR$/inscription.php" />
+        <option value="$PROJECT_DIR$/static/main.css" />
       </list>
     </option>
   </component>
@@ -265,12 +261,12 @@
       <option name="presentableId" value="Default" />
       <updated>1512679115622</updated>
       <workItem from="1512679117494" duration="8176000" />
-      <workItem from="1512688684423" duration="21484000" />
+      <workItem from="1512688684423" duration="21570000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29660000" />
+    <option name="totallyTimeSpent" value="29746000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="25" width="1282" height="1000" extended-state="6" />
@@ -618,8 +614,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/static/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="72" column="18" lean-forward="true" selection-start-line="72" selection-start-column="18" selection-end-line="72" selection-end-column="18" />
+        <state relative-caret-position="717">
+          <caret line="119" column="0" lean-forward="true" selection-start-line="119" selection-start-column="0" selection-end-line="119" selection-end-column="0" />
           <folding />
         </state>
       </provider>
