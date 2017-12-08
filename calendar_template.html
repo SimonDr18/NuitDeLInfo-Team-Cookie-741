@@ -1,0 +1,42 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="calendrier.css">
+</head>
+{% for cle in dictionnaire %}
+<div class="box">
+	<a class="button" href="#popup{{cle[0]}}"><span><img id="image{{cle[0]}}" src="http://maisondecoret.com/wp-content/uploads/2013/01/5da305f3.png" alt="jour1"></span></a>
+</div>
+<div id="popup{{cle[0]}}" class="overlay">
+	<div class="popup">
+		<a class="close" href="#">&times;</a>
+		<div class="content">
+      {% if cle[1][1]=='wallpaper' %}
+        <h2>{{cle[2][1]}}</h2>
+        <img class="wallpaper" src="{{cle[3][1]}}" alt="{{cle[1][1]}}">
+        <a href="{{cle[3][1]}}" download="{{cle[3][1]}}">Telecharger le fond d'écran</a>
+      {% elif cle[1][1]=='anecdote' %}
+        <h2>{{cle[2][1]}}</h2>
+        <p>{{cle[3][1]}}</p>
+      {% elif cle[1][1]=='references' %}
+        <h2>{{cle[2][1]}}</h2>
+        <p>{{cle[3][1]}}</p>
+      {% elif cle[1][1]=='nulle' %}
+        <h2>{{cle[2][1]}}</h2>
+        <p>{{cle[3][1]}}</p>
+      {% elif cle[1][1]=='gif' %}
+        <h2>{{cle[2][1]}}</h2>
+        <img class="gif" src="{{cle[3][1]}}" alt="{{cle[1][1]}}">
+      {% elif cle[1][1]=='avatar' %}
+        <h2>{{cle[2][1]}}</h2>
+        <img class="avatar" src="{{cle[3][1]}}" alt="{{cle[1][1]}}">
+        <a href="cle[3][1]" download="{{cle[3][1]}}">Telecharger l'image</a>
+      {% else %}
+        <h2>{{cle[2][1]}} ! </h2>
+        <img class="artbook" src="{{cle[3][1]}}" alt="{{cle[1][1]}}">
+      {% endif %}
+    </div>
+	</div>
+</div>
+{% endfor %}
+</html>
