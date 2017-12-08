@@ -16,9 +16,24 @@ body {
 .container #destinationForm input[type=text]{border:solid 1px #C0C0C0;}
 
 
+.ajout {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
 
+.ajoutbox {
+    max-width: 430px;
+    margin: 0 auto;
+}
 
+.ajoutbox [type="submit"] {
+    margin: 0 auto;
+    display: block;
+}
 
+.button{
+    margin-bottom: 5%;
+}
 
 
 
