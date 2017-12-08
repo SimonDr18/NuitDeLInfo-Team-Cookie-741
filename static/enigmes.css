@@ -1,0 +1,12 @@
+h1{
+  margin: auto;
+  color: red;
+}
+
+body{
+  font-family: "Lucida Console", Courier, monospace;
+  margin: auto;
+  text-align: center;
+  background-color: #333;
+  color: #cacaca;
+}
