@@ -1,11 +1,17 @@
+<?php
+session_start();
+$_SESSION["page"]="connexion.php";
+?>
 <!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="design.css" />
-    <title>[titre]]</title>
+    <title>Connexion</title>
+    <?php include_once("includes/_head.php"); ?>
   </head>
   <body>
+    <?php require_once("includes/_header.php"); ?>
     <header>
       <h1>connexion</h1>
     </header>

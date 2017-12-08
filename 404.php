@@ -1,3 +1,7 @@
+<?php
+session_start();
+$_SESSION["page"]="404.php";
+?>
 <!DOCTYPE html>
 <html>
   <head>
@@ -6,5 +10,6 @@
     <link rel="stylesheet" href="static/404.css">
   </head>
   <body>
+    
   </body>
 </html>

@@ -22,5 +22,5 @@ for(var i=0;i<walls.length;i++){
 f = document.getElementById('finish');
 f.addEventListener('mouseover',function(e){
   alert("Bravo, vous avez gagné !");
-  document.location.href = "testKonami.html";
+  document.location.href = "easterEgg.html";
 });
