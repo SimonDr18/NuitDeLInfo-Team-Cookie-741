@@ -28,13 +28,13 @@ $_SESSION["page"]="creerevenement.php";
                       <form id="myForm">
                           <div class="form-group">
                               <div class="form-group">
-                                  <label>Titre evenement :</label><input  type="text" name="event" />
+                                  <label>Titre evenement :</label><input  type="text" name="event" id='Titre'/>
                               </div>
                               <div class="form-group">
-                                  <label>Type : </label><input  type="text" name="type" />
+                                  <label>Type : </label><input  type="text" name="type" id='type'/>
                               </div>
                               <div class="form-group">
-                                  <label>Nombre de blessés : </label><input  type="number" name="nbblesses" />
+                                  <label>Nombre de blessés : </label><input  type="number" name="nbblesses" id='nbblesses'/>
                               </div>
                           </div>
                           <div>
