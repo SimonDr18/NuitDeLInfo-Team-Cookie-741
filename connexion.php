@@ -16,7 +16,7 @@ $_SESSION["page"]="connexion.php";
       <h1>connexion</h1>
     </header>
     <section>
-      <form action="#" method="post">
+      <form action="+co.php" method="post">
         Pseudo : <input type="text" name="Pseudo"/><br />
         Mot de passe : <input type="password" name="Pass" /><br />
         <input type="submit" value="Connexion"/>
