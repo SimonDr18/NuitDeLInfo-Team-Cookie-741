@@ -21,24 +21,31 @@ $_SESSION["page"]="soiree.php";
         <h1>Soirée</h1>
         <div id="destinationForm">
             <form action="" method="get" name="direction" id="direction">
-                <label>Point de départ :</label>
-                <input type="text" name="origin" id="origin">
-                <label>Destination :</label>
-                <input type="text" name="destination" id="destination">
-                <input type="button" value="Calculer l'itinéraire" onclick="javascript:calculate()">
+                <label>Soirée :</label>
+                <input type="text" name="soirID"/><br/>
+                <label>Date de début soirée :</label>
+                <input type="date" name="dateDSoirée"/><br/>
+                <label>Date de fin soirée :</label>
+                <input type="date" name="dateFSoirée"/><br/>
+                <label>Inviter quelqu'un ?</label>
+                <input type="email" name="mail"></input><br/>
+                <input type="submit" value="Créer"/>
             </form>
+        </div>
+        <div>
+          <h3>Calculer un itinéraire</h3>
+          <form action="" method="get" name="direction" id="direction">
+            <label>Point de départ :</label>
+            <input type="text" name="origin" id="origin"/>
+            <label>Destination :</label>
+            <input type="text" name="destination" id="destination"/>
+            <input type="button" value="Calculer l'itinéraire" onclick="javascript:calculate()"/><br/>
+          </form>
         </div>
         <div id="panel"></div>
         <div id="map">
             <p>Veuillez patienter pendant le chargement de la carte...</p>
         </div>
-    </div>
-
-    <div>
-      <form action="action_bd.php">
-        Invitation<input type="text" name="mail"></input>
-        <input type="Submit" value="Envoyer"/>
-      </form>
     </div>
 
     <!-- Include Javascript -->
