@@ -2,14 +2,36 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="441d5218-2498-45b2-88ad-e6ee433ecc14" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/appg.png" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/fond.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/sam.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/creersoiree.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/formation.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/includes/easterEgg.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/includes/enigme2.html" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/scripts/easterEgg.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/scripts/functions.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/scripts/jquery-ui-1.8.12.custom.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/scripts/jquery.min.js" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/soiree.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/images/Boss.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/images/Staff.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/images/Staff1.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/images/Staff2.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/images/enfantsPass.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/images/fullTeam.jpg" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/static/images/oeufPaques.gif" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/verifEnigme1.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/verifEnigme2.php" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/includes/_head.php" afterPath="$PROJECT_DIR$/includes/_head.php" />
+      <change beforePath="$PROJECT_DIR$/404.php" afterPath="$PROJECT_DIR$/404.php" />
+      <change beforePath="$PROJECT_DIR$/connexion.php" afterPath="$PROJECT_DIR$/connexion.php" />
+      <change beforePath="$PROJECT_DIR$/creerevenement.php" afterPath="$PROJECT_DIR$/creerevenement.php" />
       <change beforePath="$PROJECT_DIR$/includes/_header.php" afterPath="$PROJECT_DIR$/includes/_header.php" />
-      <change beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
-      <change beforePath="$PROJECT_DIR$/static/main.css" afterPath="$PROJECT_DIR$/static/main.css" />
+      <change beforePath="$PROJECT_DIR$/includes/enigme1.html" afterPath="$PROJECT_DIR$/includes/enigme1.html" />
+      <change beforePath="$PROJECT_DIR$/includes/testMouseGame.html" afterPath="$PROJECT_DIR$/includes/enigme3.html" />
+      <change beforePath="$PROJECT_DIR$/infos.php" afterPath="$PROJECT_DIR$/infos.php" />
+      <change beforePath="$PROJECT_DIR$/inscription.php" afterPath="$PROJECT_DIR$/inscription.php" />
+      <change beforePath="$PROJECT_DIR$/profil.php" afterPath="$PROJECT_DIR$/profil.php" />
+      <change beforePath="$PROJECT_DIR$/scripts/testMouseGame.js" afterPath="$PROJECT_DIR$/scripts/testMouseGame.js" />
+      <change beforePath="$PROJECT_DIR$/static/404.css" afterPath="$PROJECT_DIR$/static/404.css" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -20,14 +42,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="40">
-              <caret line="15" column="25" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="25" />
+            <state relative-caret-position="115">
+              <caret line="20" column="41" lean-forward="false" selection-start-line="20" selection-start-column="41" selection-end-line="20" selection-end-column="41" />
               <folding>
                 <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="_header.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/includes/_header.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="405">
+              <caret line="27" column="137" lean-forward="false" selection-start-line="27" selection-start-column="137" selection-end-line="27" selection-end-column="137" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -46,7 +78,7 @@
         <entry file="file://$PROJECT_DIR$/../site/Regles.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="270">
-              <caret line="18" column="25" lean-forward="true" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
+              <caret line="18" column="25" lean-forward="false" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -86,10 +118,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/includes/_header.php" />
         <option value="$PROJECT_DIR$/includes/_head.php" />
         <option value="$PROJECT_DIR$/static/main.css" />
         <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/includes/_header.php" />
       </list>
     </option>
   </component>
@@ -155,6 +187,11 @@
               <item name="NuitDeLInfo-Team_Cookies.741" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="Images" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
+            <path>
+              <item name="NuitDeLInfo-Team_Cookies.741" type="b2602c69:ProjectViewProjectNode" />
+              <item name="NuitDeLInfo-Team_Cookies.741" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="includes" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -199,12 +236,12 @@
       <option name="presentableId" value="Default" />
       <updated>1512679115622</updated>
       <workItem from="1512679117494" duration="8176000" />
-      <workItem from="1512688684423" duration="10805000" />
+      <workItem from="1512688684423" duration="10921000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18981000" />
+    <option name="totallyTimeSpent" value="19097000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="25" width="1282" height="1000" extended-state="6" />
@@ -399,14 +436,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/includes/_header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="27" lean-forward="true" selection-start-line="1" selection-start-column="27" selection-end-line="1" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/includes/_head.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -442,7 +471,7 @@
     <entry file="file://$PROJECT_DIR$/../site/Regles.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
-          <caret line="18" column="25" lean-forward="true" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
+          <caret line="18" column="25" lean-forward="false" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
           <folding />
         </state>
       </provider>
@@ -465,11 +494,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="15" column="25" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="25" />
+        <state relative-caret-position="115">
+          <caret line="20" column="41" lean-forward="false" selection-start-line="20" selection-start-column="41" selection-end-line="20" selection-end-column="41" />
           <folding>
             <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/includes/_header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="137" lean-forward="false" selection-start-line="27" selection-start-column="137" selection-end-line="27" selection-end-column="137" />
+          <folding />
         </state>
       </provider>
     </entry>
