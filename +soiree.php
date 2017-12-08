@@ -4,17 +4,19 @@ session_start();
 
 if(isset($_REQUEST["soirID"]) AND isset($_REQUEST["dateDSoirée"]) AND isset($_REQUEST["dateFSoirée"])){
   if(isset($file_db)){
-    $req = "SELECT MAX(idGroupeSoiree) AS max FROM GROUPESOIREE";
-    $newId = $file_db->query($req, PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_OBJ);
-    $newId->fetchColumn(0) + 1;
+    $req = "SELECT max(idGroupeSoiree) as maxId FROM GROUPESOIREE";
+    $stmt = $file_db->query($req);
+    $newId = ($stmt->fetch())['maxId']+1;
+
+    echo $newId;
 
     $adresse = $_POST["adresse"];
-    $dateDeb = $_POST["dateDSoiree"];
-    $dateFin = $_POST["dateFSoiree"];
+    $dateDeb = $_POST["dateDSoirée"];
+    $dateFin = $_POST["dateFSoirée"];
 
     $insert = "INSERT INTO GROUPESOIREE (idGroupeSoiree, adresse, dateDeb, dateFin)
               VALUES (:newId, :adresse, :dateDeb, :dateFin);";
-    $stmt = $connexion->prepare($insert);
+    $stmt = $file_db->prepare($insert);
     $stmt->bindParam(':newId', $newId, PDO::PARAM_STR);
     $stmt->bindParam(':adresse', $adresse, PDO::PARAM_STR);
     $stmt->bindParam(':dateDeb', $dateDeb, PDO::PARAM_STR);
@@ -32,7 +34,9 @@ if(isset($_REQUEST["soirID"]) AND isset($_REQUEST["dateDSoirée"]) AND isset($_R
       $stmt->bindParam(':idGroupeSoiree', $idGroupeSoiree, PDO::PARAM_STR);
       $stmt->bindParam(':idU', $idU, PDO::PARAM_STR);
       $stmt->execute();
-    }    
+    }
+  }
+}
 
-    header("Location: index.php");
+  header("Location: index.php");
 ?>
