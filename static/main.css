@@ -1,3 +1,9 @@
+body {
+    padding: 40px 15px;
+    text-align: center;
+}
+
+
 nav {
     background: -webkit-linear-gradient(top, rgb(45, 45, 45) 0, rgb(0, 0, 0) 100%);
     border-bottom: 1px solid #000000;
