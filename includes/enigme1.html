@@ -6,13 +6,14 @@
   <body>
     <h1>Félicitations, vous avez trouvé l'entrée à notre énigme cachée</h1>
     <p>
-      Trouvez le mot de passe caché dans cette image pour continuer votre aventure !
+      Trouvez le mot de passe caché au milieu des premières années de notre groupe
+      dans cette image pour continuer votre aventure !
     </p>
-    <img src="../static/images/enfants.jpg" alt="Les premières années de DUT informatique du groupe" style="width:;height:;"/>
-    <form action="/verifEnigme1.html" method="get">
+    <img src="../static/images/enfantsPass.jpg" alt="Les premières années de DUT informatique du groupe" style="width:1000;height:752;"/>
+    <form action="../verifEnigme1.php" method="post">
       <div>
         <label for="pass">Mot de passe :</label>
-        <input type="text" id="pass" />
+        <input type="text" id="pass" name="pass"/>
       </div>
       <button type="submit">Tester le mot de passe</button>
     </form>
