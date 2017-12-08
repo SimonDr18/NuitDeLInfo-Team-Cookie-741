@@ -1,0 +1,58 @@
+body {
+    padding: 40px 15px;
+    text-align: center;
+}
+
+
+nav {
+    background: -webkit-linear-gradient(top, rgb(45, 45, 45) 0, rgb(0, 0, 0) 100%);
+    border-bottom: 1px solid #000000;
+}
+nav > ul{
+    display : flex;
+    list-style-type : none;
+    margin-top: 0;
+}
+
+
+nav a{
+    flex : 1 1 100%;
+    padding : 0px;
+    text-align : center;
+    margin : 0%;
+    display : inline;
+    list-style : none;
+    table-layout : auto;
+    color : black;
+}
+
+nav a:hover{
+    color : white;
+}
+
+nav p{
+    font-size : 100%;
+    text-transform : uppercase;
+}
+
+nav a{
+    text-decoration : none;
+}
+.btn-primary{
+    background-color: #FFFC00;
+}
+.btn-primary:hover{
+    background-color: #FFd700;
+}
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn.active.focus {
+    background-color: #FFFC00;
+}
+
+.connect{
+    backcolor: yellow;
+}
