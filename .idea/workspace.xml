@@ -2,36 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="441d5218-2498-45b2-88ad-e6ee433ecc14" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/creersoiree.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/formation.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/includes/easterEgg.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/includes/enigme2.html" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/scripts/easterEgg.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/scripts/functions.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/scripts/jquery-ui-1.8.12.custom.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/scripts/jquery.min.js" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/soiree.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/images/Boss.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/images/Staff.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/images/Staff1.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/images/Staff2.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/images/enfantsPass.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/images/fullTeam.jpg" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/static/images/oeufPaques.gif" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/verifEnigme1.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/verifEnigme2.php" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/404.php" afterPath="$PROJECT_DIR$/404.php" />
-      <change beforePath="$PROJECT_DIR$/connexion.php" afterPath="$PROJECT_DIR$/connexion.php" />
-      <change beforePath="$PROJECT_DIR$/creerevenement.php" afterPath="$PROJECT_DIR$/creerevenement.php" />
-      <change beforePath="$PROJECT_DIR$/includes/_header.php" afterPath="$PROJECT_DIR$/includes/_header.php" />
-      <change beforePath="$PROJECT_DIR$/includes/enigme1.html" afterPath="$PROJECT_DIR$/includes/enigme1.html" />
-      <change beforePath="$PROJECT_DIR$/includes/testMouseGame.html" afterPath="$PROJECT_DIR$/includes/enigme3.html" />
-      <change beforePath="$PROJECT_DIR$/infos.php" afterPath="$PROJECT_DIR$/infos.php" />
-      <change beforePath="$PROJECT_DIR$/inscription.php" afterPath="$PROJECT_DIR$/inscription.php" />
-      <change beforePath="$PROJECT_DIR$/profil.php" afterPath="$PROJECT_DIR$/profil.php" />
-      <change beforePath="$PROJECT_DIR$/scripts/testMouseGame.js" afterPath="$PROJECT_DIR$/scripts/testMouseGame.js" />
-      <change beforePath="$PROJECT_DIR$/static/404.css" afterPath="$PROJECT_DIR$/static/404.css" />
+      <change beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
+      <change beforePath="$PROJECT_DIR$/static/main.css" afterPath="$PROJECT_DIR$/static/main.css" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -42,11 +14,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="115">
-              <caret line="20" column="41" lean-forward="false" selection-start-line="20" selection-start-column="41" selection-end-line="20" selection-end-column="41" />
+            <state relative-caret-position="326">
+              <caret line="31" column="68" lean-forward="true" selection-start-line="31" selection-start-column="68" selection-end-line="31" selection-end-column="68" />
               <folding>
                 <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -54,7 +26,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_header.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="_header.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/includes/_header.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="405">
@@ -67,8 +39,8 @@
       <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/static/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="21" lean-forward="false" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
+            <state relative-caret-position="210">
+              <caret line="14" column="17" lean-forward="false" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -77,7 +49,7 @@
       <file leaf-file-name="Regles.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../site/Regles.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
+            <state relative-caret-position="-225">
               <caret line="18" column="25" lean-forward="false" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
               <folding />
             </state>
@@ -88,7 +60,7 @@
         <entry file="file://$PROJECT_DIR$/../allocine/liste.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="435">
-              <caret line="83" column="80" lean-forward="false" selection-start-line="83" selection-start-column="63" selection-end-line="83" selection-end-column="80" />
+              <caret line="83" column="8" lean-forward="false" selection-start-line="83" selection-start-column="8" selection-end-line="83" selection-end-column="8" />
               <folding>
                 <marker date="1508137666888" expanded="true" signature="3436:3466" ph="DELETE FROM FILM... " />
                 <marker date="1508137666888" expanded="true" signature="4309:4428" ph="SELECT * FRO... FILM" />
@@ -108,8 +80,9 @@
     <findStrings>
       <find>btn</find>
       <find>ho</find>
-      <find>central_container</find>
       <find>central</find>
+      <find>elem</find>
+      <find>central_container</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -119,9 +92,9 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/includes/_head.php" />
-        <option value="$PROJECT_DIR$/static/main.css" />
-        <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/includes/_header.php" />
+        <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/static/main.css" />
       </list>
     </option>
   </component>
@@ -236,12 +209,12 @@
       <option name="presentableId" value="Default" />
       <updated>1512679115622</updated>
       <workItem from="1512679117494" duration="8176000" />
-      <workItem from="1512688684423" duration="10921000" />
+      <workItem from="1512688684423" duration="11930000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19097000" />
+    <option name="totallyTimeSpent" value="20106000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="25" width="1282" height="1000" extended-state="6" />
@@ -444,38 +417,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="21" lean-forward="false" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../allocine/liste.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="435">
-          <caret line="83" column="80" lean-forward="false" selection-start-line="83" selection-start-column="63" selection-end-line="83" selection-end-column="80" />
-          <folding>
-            <marker date="1508137666888" expanded="true" signature="3436:3466" ph="DELETE FROM FILM... " />
-            <marker date="1508137666888" expanded="true" signature="4309:4428" ph="SELECT * FRO... FILM" />
-            <marker date="1508137666888" expanded="true" signature="4461:4479" ph="SELECT * FRO... FILM" />
-            <marker date="1508137666888" expanded="true" signature="4813:4942" ph="SELECT Count... FILM" />
-            <marker date="1508137666888" expanded="true" signature="4977:5005" ph="SELECT Count... FILM" />
-            <marker date="1508137666888" expanded="true" signature="6053:6182" ph="SELECT Count... FILM" />
-            <marker date="1508137666888" expanded="true" signature="6223:6251" ph="SELECT Count... FILM" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../site/Regles.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="25" lean-forward="false" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../allocine/allocine.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-28">
@@ -492,13 +433,35 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
+    <entry file="file://$PROJECT_DIR$/../allocine/liste.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="20" column="41" lean-forward="false" selection-start-line="20" selection-start-column="41" selection-end-line="20" selection-end-column="41" />
+        <state relative-caret-position="435">
+          <caret line="83" column="8" lean-forward="false" selection-start-line="83" selection-start-column="8" selection-end-line="83" selection-end-column="8" />
           <folding>
-            <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <marker date="1508137666888" expanded="true" signature="3436:3466" ph="DELETE FROM FILM... " />
+            <marker date="1508137666888" expanded="true" signature="4309:4428" ph="SELECT * FRO... FILM" />
+            <marker date="1508137666888" expanded="true" signature="4461:4479" ph="SELECT * FRO... FILM" />
+            <marker date="1508137666888" expanded="true" signature="4813:4942" ph="SELECT Count... FILM" />
+            <marker date="1508137666888" expanded="true" signature="4977:5005" ph="SELECT Count... FILM" />
+            <marker date="1508137666888" expanded="true" signature="6053:6182" ph="SELECT Count... FILM" />
+            <marker date="1508137666888" expanded="true" signature="6223:6251" ph="SELECT Count... FILM" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../site/Regles.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-225">
+          <caret line="18" column="25" lean-forward="false" selection-start-line="18" selection-start-column="25" selection-end-line="18" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="17" lean-forward="false" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -507,6 +470,16 @@
         <state relative-caret-position="405">
           <caret line="27" column="137" lean-forward="false" selection-start-line="27" selection-start-column="137" selection-end-line="27" selection-end-column="137" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="326">
+          <caret line="31" column="68" lean-forward="true" selection-start-line="31" selection-start-column="68" selection-end-line="31" selection-end-column="68" />
+          <folding>
+            <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
