@@ -1,0 +1,7 @@
+body {
+  color:black;
+  background-color:white;
+  background-image:url("images/404.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}

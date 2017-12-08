@@ -1,6 +1,24 @@
+body {
+    background: url("../fond.jpg");
+    background-size: cover;
+    padding: 100px 15px;
+    text-align: center;
+}
+
+.elem{
+    background: white;
+}
+
+.contact{
+    margin-right: 50px;
+    margin-top: 50px;
+    padding: 20px;
+    background: white;
+}
+
 nav {
     background: -webkit-linear-gradient(top, rgb(45, 45, 45) 0, rgb(0, 0, 0) 100%);
-    border-bottom: 1px solid #257579;
+    border-bottom: 1px solid #000000;
 }
 nav > ul{
     display : flex;
@@ -33,5 +51,20 @@ nav a{
     text-decoration : none;
 }
 .btn-primary{
+    background-color: #FFFC00;
+}
+.btn-primary:hover{
     background-color: #FFd700;
+}
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn.active.focus {
+    background-color: #FFFC00;
+}
+
+.connect{
+    backcolor: yellow;
 }
