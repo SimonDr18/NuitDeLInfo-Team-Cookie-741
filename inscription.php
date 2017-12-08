@@ -11,6 +11,7 @@ $_SESSION["page"]="inscription.php";
   </head>
   <body>
     <?php require_once("includes/_header.php"); ?>
+    <?php require_once("includes/_db.php"); ?>
     <header>
       <h1>Inscription</h1>
     </header>
