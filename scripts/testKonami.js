@@ -4,7 +4,7 @@ $(document).keydown(function (e) {
     if (e.keyCode === k[n++]) {
         if (n === k.length) {
             var p = document.getElementById('bravo')
-            document.location.href = "ReussiteKonami.html"
+            document.location.href = "includes/enigme1.html"
             n = 0;
             return false;
         }
