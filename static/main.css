@@ -15,7 +15,19 @@ body {
     padding: 20px;
     background: white;
 }
+.event {
+    background: white;
+    margin: 20px;
+    padding: 20px;
+}
 
+label{
+    display : block;
+    width : 150px;
+    float: left;
+    text-align: left;
+
+}
 
 nav {
     background: -webkit-linear-gradient(top, rgb(45, 45, 45) 0, rgb(0, 0, 0) 100%);
