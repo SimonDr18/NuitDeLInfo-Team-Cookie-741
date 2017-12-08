@@ -25,15 +25,19 @@ $_SESSION["page"]="index.php";
                 <!-- Wrapper for slides -->
                 <div class="carousel-inner">
                     <div class="item active">
-                        <img width="458" height="458" src="static/images/arrive.jpg" alt="temoignage1">
+                        <!-- <img width="458" height="458" src="static/images/arrive.jpg" alt="temoignage1"> -->
+                        <img src="static/images/colision_train_voiture.jpg" alt="img colision_train_voiture">
+                        <p>"Je les ai laissé rentrer alors qu'ils avait bien bu. Je n'aurai jamais du." A.Adock</p>
                     </div>
 
                     <div class="item">
-                        <img width="458" height="458" src="static/images/GameSquare.jpg" alt="temoignage2">
+                        <img src="static/images/securite_routiere-peur.jpg" alt="securite_routiere-peur">
+                        <p></p>
                     </div>
 
                     <div class="item">
-                        <img width="458" height="458" src="static/images/BlackSquare.jpg" alt="temoignage3">
+                        <img src="static/images/perteJambe.jpg" alt="perte jambe">
+                        <p>"A force d'aller trop vite on fini par ralentir, même violemment.." K.Speedy</p>
                     </div>
                 </div>
 
