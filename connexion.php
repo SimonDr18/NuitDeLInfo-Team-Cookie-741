@@ -5,7 +5,6 @@
     <link rel="stylesheet" href="design.css" />
     <title>[titre]]</title>
   </head>
-  <?php session_start(); ?>
   <body>
     <header>
       <h1>connexion</h1>
