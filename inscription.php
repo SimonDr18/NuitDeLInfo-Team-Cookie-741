@@ -15,7 +15,7 @@ $_SESSION["page"]="inscription.php";
       <h1>Inscription</h1>
     </header>
     <section>
-      <form action="#" method="post">
+      <form action="+inscr.php" method="post">
         Nom : <input type="text" name="nom" /><br />
         Prenom : <input type="text" name="prenom" /><br />
         Pseudo : <input type="text" name="pseudo" /><br />
