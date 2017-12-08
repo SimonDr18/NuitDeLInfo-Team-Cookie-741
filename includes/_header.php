@@ -25,7 +25,7 @@
                 <li class="dropdown">
             </ul>
             <ul class="nav navbar-nav navbar-right">
-                <li <?php if($_SESSION["page"]=="connexion.php"){ echo "class='active'"; } ?>><button type="submit" class="btn btn-primary btn-sm"><a  href="connexion.php">Connexion</a></button></li>
+                <li><button type="submit" class="btn btn-primary btn-sm"><a  href="connexion.php">Connexion</a></button></li>
             </ul>
 
         </div><!--/.nav-collapse -->

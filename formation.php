@@ -1,12 +1,12 @@
 <?php
 session_start();
-$_SESSION["page"]="infos.php";
+$_SESSION["page"]="formation.php";
 ?>
 <!DOCTYPE html>
 <html>
   <head>
     <meta charset="utf-8" />
-    <title>Information</title>
+    <title>Formation</title>
     <?php include_once("includes/_head.php"); ?>
   </head>
   <body>
