@@ -40,7 +40,7 @@ $_SESSION["page"]="soiree.php";
                             <input type="date" name="dateFSoirée" required/><br/>
                         </div>
                         <div>
-                            <input type="submit" value="Créer"/>
+                            <input type="submit" value="Créer" class="btn btn-default">
                         </div>
                     </form>
                 </div>
@@ -63,10 +63,11 @@ $_SESSION["page"]="soiree.php";
                             <input type="text" name="destination" id="destination"/>
                         </div>
                         <div class="button">
-                            <input type="button" value="Calculer l'itinéraire" onclick="javascript:calculate()"/><br/>
+                            <input type="button" value="Calculer l'itinéraire" class="btn btn-default" onclick="javascript:calculate()"/><br/>
                         </div>
                     </form>
                 </div>
+                <div id="panel"></div>
                 <div id="map">
                     <p>Veuillez patienter pendant le chargement de la carte...</p>
                 </div>

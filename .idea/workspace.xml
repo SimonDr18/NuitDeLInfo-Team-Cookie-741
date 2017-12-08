@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="441d5218-2498-45b2-88ad-e6ee433ecc14" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/connexion.php" afterPath="$PROJECT_DIR$/connexion.php" />
+      <change beforePath="$PROJECT_DIR$/creerevenement.php" afterPath="$PROJECT_DIR$/creerevenement.php" />
+      <change beforePath="$PROJECT_DIR$/inscription.php" afterPath="$PROJECT_DIR$/inscription.php" />
       <change beforePath="$PROJECT_DIR$/soiree.php" afterPath="$PROJECT_DIR$/soiree.php" />
-      <change beforePath="$PROJECT_DIR$/static/main.css" afterPath="$PROJECT_DIR$/static/main.css" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -14,21 +17,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="creerevenement.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/creerevenement.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="5" lean-forward="false" selection-start-line="28" selection-start-column="25" selection-end-line="29" selection-end-column="54" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/static/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="23" column="11" lean-forward="true" selection-start-line="23" selection-start-column="11" selection-end-line="23" selection-end-column="11" />
+            <state relative-caret-position="135">
+              <caret line="9" column="16" lean-forward="false" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -37,8 +30,45 @@
       <file leaf-file-name="soiree.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/soiree.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="371">
-              <caret line="64" column="43" lean-forward="false" selection-start-line="64" selection-start-column="43" selection-end-line="64" selection-end-column="43" />
+            <state relative-caret-position="600">
+              <caret line="65" column="47" lean-forward="false" selection-start-line="65" selection-start-column="47" selection-end-line="65" selection-end-column="47" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="inscription.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/inscription.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="510">
+              <caret line="49" column="43" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+              <folding>
+                <marker date="1512714731944" expanded="true" signature="2887:2964" ph="SELECT login... MEMBRE" />
+                <marker date="1512714731944" expanded="true" signature="3609:3710" ph="SELECT adres... MEMBRE" />
+                <marker date="1512714731944" expanded="true" signature="5408:5435" ph="SELECT max(i... MEMBRE" />
+                <marker date="1512714731944" expanded="true" signature="5635:5729" ph="INSERT INTO MEMBRE... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="connexion.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/connexion.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="510">
+              <caret line="34" column="63" lean-forward="false" selection-start-line="34" selection-start-column="52" selection-end-line="34" selection-end-column="63" />
+              <folding>
+                <element signature="n#style#0;n#form#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="creerevenement.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/creerevenement.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="600">
+              <caret line="40" column="32" lean-forward="false" selection-start-line="40" selection-start-column="32" selection-end-line="40" selection-end-column="91" />
               <folding />
             </state>
           </provider>
@@ -47,10 +77,10 @@
       <file leaf-file-name="addMovie.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../allocine/addMovie.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="76" column="40" lean-forward="true" selection-start-line="76" selection-start-column="16" selection-end-line="76" selection-end-column="40" />
+            <state relative-caret-position="315">
+              <caret line="51" column="40" lean-forward="true" selection-start-line="51" selection-start-column="40" selection-end-line="51" selection-end-column="40" />
               <folding>
-                <marker date="1508158807650" expanded="true" signature="5693:5712" ph="SELECT * FRO... GENRE" />
+                <marker date="1512713249853" expanded="true" signature="6551:6570" ph="SELECT * FRO... GENRE" />
               </folding>
             </state>
           </provider>
@@ -59,8 +89,8 @@
       <file leaf-file-name="start.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../allocine/start.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="642">
-              <caret line="113" column="1" lean-forward="true" selection-start-line="100" selection-start-column="1" selection-end-line="113" selection-end-column="1" />
+            <state relative-caret-position="732">
+              <caret line="113" column="1" lean-forward="false" selection-start-line="100" selection-start-column="1" selection-end-line="113" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -90,13 +120,13 @@
         <option value="$PROJECT_DIR$/includes/_head.php" />
         <option value="$PROJECT_DIR$/includes/_header.php" />
         <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/includes/enigme1.html" />
+        <option value="$PROJECT_DIR$/static/main.css" />
         <option value="$PROJECT_DIR$/../allocine/addMovie.php" />
         <option value="$PROJECT_DIR$/creerevenement.php" />
-        <option value="$PROJECT_DIR$/includes/enigme1.html" />
-        <option value="$PROJECT_DIR$/connexion.php" />
         <option value="$PROJECT_DIR$/inscription.php" />
         <option value="$PROJECT_DIR$/soiree.php" />
-        <option value="$PROJECT_DIR$/static/main.css" />
+        <option value="$PROJECT_DIR$/connexion.php" />
       </list>
     </option>
   </component>
@@ -219,12 +249,12 @@
       <option name="presentableId" value="Default" />
       <updated>1512679115622</updated>
       <workItem from="1512679117494" duration="8176000" />
-      <workItem from="1512688684423" duration="23802000" />
+      <workItem from="1512688684423" duration="26220000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="31978000" />
+    <option name="totallyTimeSpent" value="34396000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="25" width="1282" height="1000" extended-state="6" />
@@ -478,7 +508,7 @@
         <state relative-caret-position="105">
           <caret line="7" column="14" lean-forward="false" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
           <folding>
-            <element signature="n#style#0;n#img#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -487,14 +517,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
           <caret line="2" column="28" lean-forward="false" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/connexion.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="24" lean-forward="false" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
           <folding />
         </state>
       </provider>
@@ -523,19 +545,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/inscription.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="29" column="48" lean-forward="false" selection-start-line="29" selection-start-column="48" selection-end-line="29" selection-end-column="48" />
-          <folding>
-            <marker date="1512709814139" expanded="true" signature="1564:1641" ph="SELECT login... MEMBRE" />
-            <marker date="1512709814139" expanded="true" signature="2120:2221" ph="SELECT adres... MEMBRE" />
-            <marker date="1512709814139" expanded="true" signature="3563:3590" ph="SELECT max(i... MEMBRE" />
-            <marker date="1512709814139" expanded="true" signature="3742:3836" ph="INSERT INTO MEMBRE... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
@@ -544,45 +553,68 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/creerevenement.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="5" lean-forward="false" selection-start-line="28" selection-start-column="25" selection-end-line="29" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../allocine/start.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="642">
-          <caret line="113" column="1" lean-forward="true" selection-start-line="100" selection-start-column="1" selection-end-line="113" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/soiree.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="371">
-          <caret line="64" column="43" lean-forward="false" selection-start-line="64" selection-start-column="43" selection-end-line="64" selection-end-column="43" />
+        <state relative-caret-position="732">
+          <caret line="113" column="1" lean-forward="false" selection-start-line="100" selection-start-column="1" selection-end-line="113" selection-end-column="1" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../allocine/addMovie.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="76" column="40" lean-forward="true" selection-start-line="76" selection-start-column="16" selection-end-line="76" selection-end-column="40" />
+        <state relative-caret-position="315">
+          <caret line="51" column="40" lean-forward="true" selection-start-line="51" selection-start-column="40" selection-end-line="51" selection-end-column="40" />
           <folding>
-            <marker date="1508158807650" expanded="true" signature="5693:5712" ph="SELECT * FRO... GENRE" />
+            <marker date="1512713249853" expanded="true" signature="6551:6570" ph="SELECT * FRO... GENRE" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/static/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="11" lean-forward="true" selection-start-line="23" selection-start-column="11" selection-end-line="23" selection-end-column="11" />
+        <state relative-caret-position="135">
+          <caret line="9" column="16" lean-forward="false" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/creerevenement.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="40" column="32" lean-forward="false" selection-start-line="40" selection-start-column="32" selection-end-line="40" selection-end-column="91" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inscription.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="49" column="43" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
+          <folding>
+            <marker date="1512714731944" expanded="true" signature="2887:2964" ph="SELECT login... MEMBRE" />
+            <marker date="1512714731944" expanded="true" signature="3609:3710" ph="SELECT adres... MEMBRE" />
+            <marker date="1512714731944" expanded="true" signature="5408:5435" ph="SELECT max(i... MEMBRE" />
+            <marker date="1512714731944" expanded="true" signature="5635:5729" ph="INSERT INTO MEMBRE... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/soiree.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="600">
+          <caret line="65" column="47" lean-forward="false" selection-start-line="65" selection-start-column="47" selection-end-line="65" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/connexion.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="34" column="63" lean-forward="false" selection-start-line="34" selection-start-column="52" selection-end-line="34" selection-end-column="63" />
+          <folding>
+            <element signature="n#style#0;n#form#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
