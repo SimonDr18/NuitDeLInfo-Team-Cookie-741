@@ -1,3 +1,7 @@
+<?php
+session_start();
+$_SESSION["page"]="soiree.php";
+?>
 <!DOCTYPE html>
 <html lang='fr'>
 <?php include_once("includes/_head.php"); ?>
